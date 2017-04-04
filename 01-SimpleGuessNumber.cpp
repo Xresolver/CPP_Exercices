@@ -1,4 +1,3 @@
-// Exercise 3.38 Solution
 // Randomly generate numbers between 1 and 1000 for user to guess.
 #include <iostream>
 #include <cstdlib>
