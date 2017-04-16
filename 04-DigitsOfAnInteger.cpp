@@ -8,8 +8,8 @@ int main(int argc, char **argv)
 {
 	int number = 0;
 	int buffer = 0;   		//when we operate, we don't want to lose number variable.
-	int multipleOfTen = 1; 	//for calculate digits.
-	int digit;				//which we will print
+	int multipleOfTen = 1; 		//for calculate digits.
+	int digit;			//which we will print
 
 	cout << "Enter a number: ";
 	cin >> number;
