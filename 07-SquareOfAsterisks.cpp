@@ -23,29 +23,29 @@ void drawSquare(int size)
 
 }
 
-void validateAndRun()
+void validate( int *size )
 {
-	int sideSize;
-
-	cout << "Please enter an integer value between 1 and 50: ";
-	cin >> sideSize;
-	cout << "\n";
-
-	while(sideSize < 1 || sideSize > 50)
+	while(*size < 1 || *size > 50)
 	{
-		cout << sideSize << " isn't between 1 and 50.\n"
+		cout << *size << " isn't between 1 and 50.\n"
 			 << "Please enter an integer value between 1 and 50: ";
-		cin >> sideSize;
+		cin >> *size;
 		cout << "\n";
 	}
-
-	drawSquare(sideSize);
 
 }
 
 int main(int argc, char **argv)
 {
 
-	validateAndRun();
+	int sideSize;
+
+	cout << "Please enter an integer value between 1 and 50: ";
+	cin >> sideSize;
+	cout << "\n";
+
+	validate(&sideSize);
+	drawSquare(sideSize);
+
 	return 0;
 }
